@@ -38,7 +38,7 @@ class ApplicationController < Sinatra::Base
     
     @recipe.save
     
-    redirect to "/ar/#{@article.id}"
+    redirect to "/recipes/#{@recipe.id}"
   end  
   
 end
