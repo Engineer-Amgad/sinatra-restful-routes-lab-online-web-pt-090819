@@ -2,7 +2,6 @@
 
 <% @recipes.each do |recipe| %>
   <%= recipe.name %>
-  /recipes/<%= @recipe.id %>
   <a href= <%= "/recipes/#{@recipe.id}" %> >Log Out</a>
   <%end%>
   
