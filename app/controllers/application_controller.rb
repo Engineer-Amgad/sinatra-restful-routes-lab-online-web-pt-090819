@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
   end  
   
   post '/recipes' do
-    @recipe = Recipe.create(title: params[:name], content: params[:content])
+    @recipe = Recipe.create(name: params[:name], ingredients: params[:ingredients], name: params[:name])
     redirect to "/articles/#{Article.last.id}"
   end
   
