@@ -34,6 +34,7 @@ class ApplicationController < Sinatra::Base
     @recipe = Recipe.find(params[:id])
     @recipe.name = params[:name]
     @recipe.ingredients = params[:content]
+    
     @recipe.save
     
     redirect to "/articles/#{@article.id}"
